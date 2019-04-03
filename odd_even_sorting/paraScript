@@ -1,0 +1,12 @@
+#!/bin/bash
+#PBS -l nodes=1:ppn=1:physical
+#PBS -l walltime=00:10:00
+#PBS -o /home/Students/cdelaney3/cloud_parallel/Assignment#7_Delaney/job_out
+#PBS -j oe
+#PBS -N paraSort
+
+date
+export PROGRAM="/home/Students/cdelaney3/cloud_parallel/Assignment#7_Delaney/para"
+mpirun -machinefile $PBS_NODEFILE $PROGRAM 400000
+date
+exit 0
