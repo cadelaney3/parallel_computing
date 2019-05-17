@@ -8,3 +8,5 @@ running the parallel projects from terminal:
 running the thread projects from terminal:
 
 gcc -o file file.c -lpthread
+
+term_pair_count uses Hadoop MadReduce.
